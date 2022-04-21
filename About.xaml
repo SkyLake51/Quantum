@@ -1,0 +1,31 @@
+﻿<Page x:Class="Quantum.About"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Quantum"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1050"
+      Title="About"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Dark.jpeg" Stretch="UniformToFill" Opacity="0.5"/>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" Margin="100,120,0,0" TextWrapping="Wrap" Text="Quantum" VerticalAlignment="Top" Width="218" Height="64" FontFamily="HarmonyOS Sans SC"  FontSize="50" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="330,120,0,0" TextWrapping="Wrap" Text="X" VerticalAlignment="Top" FontFamily="HarmonyOS Sans SC" Width="32" Height="64" FontSize="50" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="362,115,0,0" TextWrapping="Wrap" Text="e" VerticalAlignment="Top" FontSize="40" Foreground="White" FontFamily="HarmonyOS Sans SC"/>
+        <TextBlock HorizontalAlignment="Left" Margin="105,200,0,0" TextWrapping="Wrap" Text="Preview" VerticalAlignment="Top" FontSize="40" Foreground="White" FontFamily="HarmonyOS Sans SC"/>
+        <TextBlock HorizontalAlignment="Left" Margin="105,270,0,0" TextWrapping="Wrap" Text="Quantum Xe预览版 版本号13" VerticalAlignment="Top" FontSize="15" Foreground="Black" FontFamily="HarmonyOS Sans SC"/>
+        <TextBlock HorizontalAlignment="Left" Margin="105,300,0,0" TextWrapping="Wrap" Text="当前正在使用启动核心:KMCCC" VerticalAlignment="Top" FontSize="15" Foreground="Black" FontFamily="HarmonyOS Sans SC"/>
+        <TextBlock HorizontalAlignment="Left" Margin="105,570,0,0" TextWrapping="Wrap" Text="This Open Source Software is based on the LGPL License,any modifications based on this software shall be open source." VerticalAlignment="Top" FontSize="15" Foreground="Black" FontFamily="HarmonyOS Sans SC"/>
+       </Grid>
+</Page>

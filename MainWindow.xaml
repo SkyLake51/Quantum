@@ -1,0 +1,39 @@
+﻿<Window x:Class="Quantum.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Quantum"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        Title="Quantum" Height="768" Width="1280"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/background.png" Stretch="UniformToFill" Opacity="0.4"/>
+        </Grid.Background>
+        <Grid>
+            <Button Content="版本" HorizontalAlignment="Center" Margin="0,190,0,0" VerticalAlignment="Top" Width="177" Background="#FF673AB7" FontFamily="HarmonyOS Sans SC" Click="Button_Click"/>
+            <Button Content="离线" HorizontalAlignment="Left" Margin="40,270,0,0" VerticalAlignment="Top" Width="80" Background="#FF673AB7" FontFamily="HarmonyOS Sans SC"  Click="Button_Click_2"/>
+            <Button Content="正版" HorizontalAlignment="Left" Margin="130,270,0,0" VerticalAlignment="Top" Width="80" Background="#FF673AB7" FontFamily="HarmonyOS Sans SC"  Click="Button_Click_1"/>
+            <Button Content="设置" HorizontalAlignment="Center" Margin="0,350,0,0" VerticalAlignment="Top" Width="177" Background="#FF673AB7" FontFamily="HarmonyOS Sans SC"   Click="Button_Click_3"/>
+            <Button Content="启动" HorizontalAlignment="Center" Margin="0,430,0,0" VerticalAlignment="Top" Width="177" Background="#FF673AB7" FontFamily="HarmonyOS Sans SC"  Click="Button_Click_4"/>
+            <Button Content="启用深色模式" HorizontalAlignment="Center" Margin="0,600,0,0" VerticalAlignment="Top" Width="177" Background="#FF673AB7" FontFamily="HarmonyOS Sans SC"   Click="Button_Click_5"/>
+            <Button Content="关于" HorizontalAlignment="Center" Margin="0,670,0,0" VerticalAlignment="Top" Width="177" Background="#FF673AB7" FontFamily="HarmonyOS Sans SC"  Click="Button_Click_6"/>
+            <TextBlock HorizontalAlignment="Center" Margin="0,70,0,0" TextWrapping="Wrap" Text="Quantum" VerticalAlignment="Top" Height="50" Width="172" FontSize="40" FontFamily="HarmonyOS Sans SC"/>
+
+        </Grid>
+        <ContentControl Grid.Column="1" x:Name="ContentControl"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="1024"/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+</Window>
