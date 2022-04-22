@@ -24,8 +24,8 @@
         <TextBlock HorizontalAlignment="Left" Margin="330,120,0,0" TextWrapping="Wrap" Text="X" VerticalAlignment="Top" FontFamily="HarmonyOS Sans SC" Width="32" Height="64" FontSize="50" Foreground="White"/>
         <TextBlock HorizontalAlignment="Left" Margin="362,115,0,0" TextWrapping="Wrap" Text="e" VerticalAlignment="Top" FontSize="40" Foreground="White" FontFamily="HarmonyOS Sans SC"/>
         <TextBlock HorizontalAlignment="Left" Margin="105,200,0,0" TextWrapping="Wrap" Text="Preview" VerticalAlignment="Top" FontSize="40" Foreground="White" FontFamily="HarmonyOS Sans SC"/>
-        <TextBlock HorizontalAlignment="Left" Margin="105,270,0,0" TextWrapping="Wrap" Text="Quantum Xe预览版 版本号13" VerticalAlignment="Top" FontSize="15" Foreground="Black" FontFamily="HarmonyOS Sans SC"/>
+        <TextBlock HorizontalAlignment="Left" Margin="105,270,0,0" TextWrapping="Wrap" Text="Quantum Xe预览版 版本号15" VerticalAlignment="Top" FontSize="15" Foreground="Black" FontFamily="HarmonyOS Sans SC"/>
         <TextBlock HorizontalAlignment="Left" Margin="105,300,0,0" TextWrapping="Wrap" Text="当前正在使用启动核心:KMCCC" VerticalAlignment="Top" FontSize="15" Foreground="Black" FontFamily="HarmonyOS Sans SC"/>
-        <TextBlock HorizontalAlignment="Left" Margin="105,570,0,0" TextWrapping="Wrap" Text="This Open Source Software is based on the LGPL License,any modifications based on this software shall be open source." VerticalAlignment="Top" FontSize="15" Foreground="Black" FontFamily="HarmonyOS Sans SC"/>
+        <TextBlock HorizontalAlignment="Left" Margin="105,570,0,0" TextWrapping="Wrap" Text="This Open Source Software is based on the LGPL License." VerticalAlignment="Top" FontSize="15" Foreground="Black" FontFamily="HarmonyOS Sans SC"/>
        </Grid>
 </Page>

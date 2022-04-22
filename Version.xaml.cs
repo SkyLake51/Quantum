@@ -39,9 +39,7 @@ namespace Quantum
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-            string WantedPath = System.Windows.Forms.Application.StartupPath.Substring(0, System.Windows.Forms.Application.StartupPath.LastIndexOf(@"\"));
-            string path2 = System.IO.Path.GetDirectoryName(WantedPath);
+            string path2 = AppDomain.CurrentDomain.BaseDirectory;
             //用户选择目录
             System.Windows.Forms.FolderBrowserDialog fbd = new System.Windows.Forms.FolderBrowserDialog();
             fbd.ShowDialog();
@@ -50,12 +48,12 @@ namespace Quantum
             {
                 try
                 {
-                    FileUtility.CopyFolder(fbd.SelectedPath , path2 + @"\.minecraft\");
+                    FileUtility.CopyFolder(fbd.SelectedPath , path2 + @"\.minecraft");
                     MessageBox.Show("导入完成");
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("导入出错");
+                    MessageBox.Show("导入失败");
                 }
             }
         }
@@ -91,7 +89,6 @@ namespace Quantum
                     {
                         string dirName = folder.Split('\\')[folder.Split('\\').Length - 1];
                         string destfolder = Path.Combine(destFolder, dirName);
-                        // 递归调用
                         CopyFolder(folder, destfolder);
                     }
                 }
@@ -103,6 +100,11 @@ namespace Quantum
 
 
            
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(AppDomain.CurrentDomain.BaseDirectory + @"\.minecraft");
         }
     }
 }

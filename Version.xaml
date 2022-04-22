@@ -23,6 +23,6 @@
         <ComboBox x:Name="versionCombo" DisplayMemberPath="Id" HorizontalAlignment="Left" Margin="100,200,0,0" FontFamily="HarmonyOS Sans SC" VerticalAlignment="Top" Width="300" />
         <TextBlock HorizontalAlignment="Left" Margin="100,140,0,0" TextWrapping="Wrap" Text="版本选择" VerticalAlignment="Top" Height="35" Width="140" FontFamily="HarmonyOS Sans SC" FontSize="20"/>
         <Button Content="导入" HorizontalAlignment="Left" Margin="470,195,0,0" VerticalAlignment="Top" FontFamily="HarmonyOS Sans SC" Click="Button_Click"/>
-
+        <Button Content="打开版本文件夹" HorizontalAlignment="Left" Margin="100,270,0,0" VerticalAlignment="Top" Width="230" FontFamily="HarmonyOS Sans SC" Click="Button_Click_1" Background="#FF2E1C4E" BorderBrush="#FF2E1C4E"/>
     </Grid>
 </Page>

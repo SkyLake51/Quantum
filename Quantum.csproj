@@ -211,9 +211,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Apple.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="background.png" />
   </ItemGroup>
   <ItemGroup>
